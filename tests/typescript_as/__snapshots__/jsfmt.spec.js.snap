@@ -202,6 +202,44 @@ export default (function log() {} as typeof console.log);
 ================================================================================
 `;
 
+exports[`long-identifiers.ts 1`] = `
+====================================options=====================================
+parsers: ["typescript"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+const bifornCringerMoshedPerplexSawder =
+  askTrovenaBeenaDependsRowans as glimseGlyphsHazardNoopsTieTie;
+
+averredBathersBoxroomBuggyNurl.anodyneCondosMalateOverateRetinol =
+  annularCooeedSplicesWalksWayWay as kochabCooieGameOnOboleUnweave;
+
+averredBathersBoxroomBuggyNurl = {
+  anodyneCondosMalateOverateRetinol:
+    annularCooeedSplicesWalksWayWay as kochabCooieGameOnOboleUnweave
+};
+
+averredBathersBoxroomBuggyNurl(
+  anodyneCondosMalateOverateRetinol.annularCooeedSplicesWalksWayWay as
+    kochabCooieGameOnOboleUnweave
+);
+
+=====================================output=====================================
+const bifornCringerMoshedPerplexSawder = askTrovenaBeenaDependsRowans as glimseGlyphsHazardNoopsTieTie;
+
+averredBathersBoxroomBuggyNurl.anodyneCondosMalateOverateRetinol = annularCooeedSplicesWalksWayWay as kochabCooieGameOnOboleUnweave;
+
+averredBathersBoxroomBuggyNurl = {
+  anodyneCondosMalateOverateRetinol: annularCooeedSplicesWalksWayWay as kochabCooieGameOnOboleUnweave,
+};
+
+averredBathersBoxroomBuggyNurl(
+  anodyneCondosMalateOverateRetinol.annularCooeedSplicesWalksWayWay as kochabCooieGameOnOboleUnweave
+);
+
+================================================================================
+`;
+
 exports[`return.ts 1`] = `
 ====================================options=====================================
 parsers: ["typescript"]
