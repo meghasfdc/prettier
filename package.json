@@ -69,7 +69,8 @@
     "unicode-regex": "3.0.0",
     "unified": "9.0.0",
     "vnopts": "1.0.2",
-    "yaml-unist-parser": "1.1.1"
+    "yaml-unist-parser": "1.1.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@babel/core": "7.9.0",
@@ -128,6 +129,9 @@
     "lint:spellcheck": "cspell {bin,scripts,src,website}/**/*.js {docs,website/blog,changelog_unreleased}/**/*.md",
     "lint:deps": "node ./scripts/check-deps.js",
     "build": "node --max-old-space-size=3072 ./scripts/build/build.js",
-    "build-docs": "node ./scripts/build-docs.js"
-  }
+    "build-docs": "node ./scripts/build-docs.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
+  },
+  "snyk": true
 }
